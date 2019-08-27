@@ -1,0 +1,173 @@
+---
+title: "Master of Business analytics: MBAT"
+author: "Patricia Menéndez"
+date: 
+fontsize: 14pt
+output:
+  beamer_presentation:
+    fig_height: 4.33
+    fig_width: 6
+    highlight: tango
+    keep_tex: no
+    incremental: no
+    theme: metropolis
+    includes:
+      in_header: preamble.tex
+---
+
+```{r setup1, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, cache=TRUE,
+  dev.args=list(bg=grey(0.9), pointsize=11))
+```
+
+```{r}
+library(gridExtra)
+library(ggplot2)
+library(knitr)
+library(tidyverse)
+
+
+library(lubridate)
+library(tsibble)
+library(ggwordcloud)
+
+```
+
+
+## Data is everywhere
+
+\begin{center}
+   \includegraphics[height = 7.5cm, width = 8cm]{data-never-sleeps}
+\end{center}
+
+## Why Business Analytics?
+\begin{itemize}
+\item Informed decisions based on facts
+\item Facts are measured via data
+\item Informed business decisions based on data
+\item Business Analytics! 
+\end{itemize}
+
+
+## 
+
+\forestset{
+  L1/.style={},
+  L2/.style={edge={Orange,line width=2pt}},
+  L3/.style={edge={Orange,line width=2pt}},
+  L4/.style={edge={Orange,line width=2pt}},
+  L5/.style={edge={Orange,line width=2pt}},
+}
+
+\begin{forest}
+for tree={l sep+=.2cm,s sep+=.15cm,shape=rectangle, rounded corners,
+    draw, align=center,
+     top color=MonashBlue,  bottom color=MonashBlue}
+[\color{white}{Business Analytics}, L1 
+  [\color{white}{Informed Decisions based on facts}, L2
+    [\color{white}{Facts are measured via data}, L3 
+       [\color{white}{Informed decisions need data}, L4]
+       [\color{white}{Communicating}, L5]     
+    ]
+  ]  
+]    
+\end{forest}
+
+## What does a Business analytics professional do?
+
+\begin{itemize}
+\item  Using statistical and computational skills to answer business questions
+\item  Visualizing data 
+\item  Quantiative odelling (for big and small data \& for simple and complex data) 
+\item  Being able to comunicate findings to experts and broad audiences 
+\end{itemize}
+
+
+
+```{r}
+
+set.seed(43)
+data = data.frame(word = c("Data", "Statistics", "Decision making",
+                           "R", "Computational statistics", "Modelling",
+                           "Visualization", "Comunicating with data", "Business analytics"),
+                  weight = c(runif(8, min = 100, max = 800), 900),
+                  col = seq(1:9))
+
+set.seed(42)
+ggplot(data, aes(label = word, size = weight, color = col)) +
+  geom_text_wordcloud_area() +
+  scale_size_area(max_size = 24) +
+  theme_minimal()
+
+ggsave("figs/word.pdf")
+```
+
+## Top jobs under the "4th Industrial revolution"
+
+\begin{columns}
+\begin{column}{0.5\textwidth} 
+   \begin{block}{}
+\begin{enumerate}
+\item Data Scientists (19\%)
+\item Statistician (33\%)
+\item University Professor
+\end{enumerate}
+\end{block}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{center}
+   \includegraphics[height = 10cm, width = 10cm]{word}
+\end{center}
+   
+\end{column}
+\end{columns}
+
+Data is driving the 4th Industrial Revolution
+<!-- \begin{verbatim} -->
+<!-- https://www.careercast.com/jobs-rated/best-jobs-of-2019 -->
+<!-- \end{verbatim} -->
+
+
+
+
+
+## Decisions and Data
+
+
+\begin{center}
+   \includegraphics[height = 4.5cm]{data}
+\end{center}
+
+\begin{itemize}
+\item increasing availability of data in our society
+\item Data is used to make decisions
+\item Industry, Government, inter-government and NGO
+\item Tools for data driven decision making
+\end{itemize}
+
+
+
+## Companies and governments create stratagies about
+
+\begin{block}{}
+\begin{itemize}
+\item Relevant data
+\item Data Collection
+\item Data hiden in my organization?
+\item Cleaning and analyzing data
+\item Setting up adequate experimental desings
+\item Strategies for merging and analytize data
+\end{itemize}
+\end{block}
+
+
+## Master of Business Analytics
+
+## Job Market
+
+\begin{itemize}
+\item Endless job opportunities
+\item University
+\item Industry
+\item Government
+\end{itemize}
