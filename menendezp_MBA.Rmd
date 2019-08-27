@@ -48,8 +48,19 @@ library(ggwordcloud)
 \item Business Analytics! 
 \end{itemize}
 
+## MBAT
+\begin{block}{}
+\begin{itemize}
+\item Statistical modelling and thinking
+\item R
+\item Communication and collaboration
+end-to-end analytics
+\end{itemize}
+\end{block}
 
-## 
+Learn to solve problems understanding the stats and developing computational methods.
+
+##  Testing
 
 \forestset{
   L1/.style={},
@@ -162,6 +173,59 @@ Data is driving the 4th Industrial Revolution
 
 
 ## Master of Business Analytics
+
+\begin{itemize}
+\item At least one unit of undergraduate statistics.
+\item An interest in using data to solve problems and
+uncover truths.
+\item A combination of mathematics and computing
+skills with curiosity about the world.
+\item Most likely an undergraduate degree in a
+quantitative discipline: engineering, computer
+science, mathematics, statistics.
+\end{itemize}
+
+## Units --> Advanced Preparatory Studies
+
+\begin{block}{Advanced preparatory studies (24 points)}
+\begin{itemize}
+\item  ETC5510: Introduction to data analysis
+\item  ETC5242: Statistical thinking
+\item  ETC5250 Introduction to machine learning
+\item  ETC5550 Applied forecasting
+\end{itemize}
+\end{block}
+
+## Units --> Mastery Knowledge
+
+\begin{block}{Mastery knowledge (48 points)}
+\begin{itemize}
+\item  ETC5512 Wild-caught data
+\item  ETC5513 Collaborative and reproducible practices
+\item  ETC5521 Exploratory data analysis
+\item  ETC5523 Data story-telling
+\item  ETF5500 High dimensional data analysis
+\item  ETC5555 Statistical machine learning
+\item ETC5580 Advanced statistical modelling
+\item  ETC5543 Business analytics creative activity (12) 9
+\end{itemize}
+\end{block}
+
+## Units --> Application Studies
+
+\begin{block}{Application studies (24 points)}
+\begin{itemize}
+
+\item FIT9133 Programming foundations in Python
+\item FIT5205 Data in society
+\item FIT9132 Introduction to databases
+\item MAT9004 Mathematical foundations for data science
+\item ETC5410 Bayesian time series econometrics
+\item FIT5147 Data exploration and visualisation
+\item ETC5555 Statistical machine learning
+\item FIT5212 Data analysis for semi-structured data
+\end{itemize}
+\end{block}
 
 ## Job Market
 
