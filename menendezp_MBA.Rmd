@@ -30,6 +30,7 @@ library(tidyverse)
 library(lubridate)
 library(tsibble)
 library(ggwordcloud)
+library(maps)
 
 ```
 
@@ -48,18 +49,32 @@ library(ggwordcloud)
 \item Business Analytics! 
 \end{itemize}
 
-## MBAT
+## Master of Business Analytics --> Starting 2020
+\begin{columns}
+\begin{column}{0.5\textwidth} 
+
 \begin{block}{}
 \begin{itemize}
-\item Statistical modelling and thinking
+\item Statistical modelling 
+\item Computational methods
 \item R
-\item Communication and collaboration
-end-to-end analytics
+\item End-to-end analytics
+\item Communicating with data
+
 \end{itemize}
 \end{block}
 
-Learn to solve problems understanding the stats and developing computational methods.
-
+\end{column}
+\begin{column}{0.5\textwidth}
+\textbf{EBS, Monash University}
+\begin{center}
+   \includegraphics[height = 5.5cm, width = 6cm]{hexAustralia}
+\end{center}
+\end{column}
+\end{columns}
+\begin{center}
+Know what you are doing!
+\end{center}
 ##  Testing
 
 \forestset{
@@ -84,7 +99,7 @@ for tree={l sep+=.2cm,s sep+=.15cm,shape=rectangle, rounded corners,
 ]    
 \end{forest}
 
-## What does a Business analytics professional do?
+## Business analytics professional?
 
 \begin{itemize}
 \item  Using statistical and computational skills to answer business questions
@@ -95,7 +110,7 @@ for tree={l sep+=.2cm,s sep+=.15cm,shape=rectangle, rounded corners,
 
 
 
-```{r}
+```{r , fig.width= 10, fig.height=10}
 
 set.seed(43)
 data = data.frame(word = c("Data", "Statistics", "Decision making",
@@ -104,10 +119,10 @@ data = data.frame(word = c("Data", "Statistics", "Decision making",
                   weight = c(runif(8, min = 100, max = 800), 900),
                   col = seq(1:9))
 
-set.seed(42)
+set.seed(12)
 ggplot(data, aes(label = word, size = weight, color = col)) +
   geom_text_wordcloud_area() +
-  scale_size_area(max_size = 24) +
+  scale_size_area(max_size = 100) +
   theme_minimal()
 
 ggsave("figs/word.pdf")
@@ -127,13 +142,13 @@ ggsave("figs/word.pdf")
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{center}
-   \includegraphics[height = 10cm, width = 10cm]{word}
+   \includegraphics[width = 6cm, height = 7cm]{word}
 \end{center}
    
 \end{column}
 \end{columns}
 
-Data is driving the 4th Industrial Revolution
+\textbf{Data is driving the 4th Industrial Revolution}
 <!-- \begin{verbatim} -->
 <!-- https://www.careercast.com/jobs-rated/best-jobs-of-2019 -->
 <!-- \end{verbatim} -->
@@ -144,10 +159,13 @@ Data is driving the 4th Industrial Revolution
 
 ## Decisions and Data
 
-
+\begin{columns}
+\begin{column}{0.5\textwidth} 
 \begin{center}
    \includegraphics[height = 4.5cm]{data}
 \end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
 
 \begin{itemize}
 \item increasing availability of data in our society
@@ -155,21 +173,38 @@ Data is driving the 4th Industrial Revolution
 \item Industry, Government, inter-government and NGO
 \item Tools for data driven decision making
 \end{itemize}
+\end{column}
+\end{columns}
+
+
+```{r}
+ggplot(map_data("world"), aes(long, lat, group=group, fill=region)) + 
+  geom_polygon(show.legend = F) +
+  ggtitle("Looking for business analytics profesionals")
+
+ggsave("figs/worldmap.pdf")
+```
 
 
 
-## Companies and governments create stratagies about
+## Worldwide 
+Companies and governments are creating stratagies for:
 
-\begin{block}{}
+\begin{columns}
+\begin{column}{0.5\textwidth} 
+\begin{center}
+   \includegraphics[height = 8.5cm, width = 6cm]{worldmap}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+
 \begin{itemize}
-\item Relevant data
-\item Data Collection
-\item Data hiden in my organization?
-\item Cleaning and analyzing data
-\item Setting up adequate experimental desings
-\item Strategies for merging and analytize data
+\item Data Collection $\rightarrow$ experimental designs
+\item Cleaning and merging data 
+\item Analyzing data
 \end{itemize}
-\end{block}
+\end{column}
+\end{columns}
 
 
 ## Master of Business Analytics
@@ -227,11 +262,16 @@ science, mathematics, statistics.
 \end{itemize}
 \end{block}
 
-## Job Market
+## MBAT: A World full of opportunities
 
-\begin{itemize}
-\item Endless job opportunities
-\item University
-\item Industry
-\item Government
-\end{itemize}
+
+\begin{center}
+\textbf{All here at Monash!}
+
+   \includegraphics[height = 8.5cm, width = 6cm]{earth_NASA}
+   
+   \textbf{Jump in!}
+\end{center}
+
+
+
