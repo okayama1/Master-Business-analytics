@@ -38,16 +38,18 @@ library(maps)
 ## Data is everywhere
 
 \begin{center}
-   \includegraphics[height = 7.5cm, width = 8cm]{data-never-sleeps}
+   \includegraphics[height =\textheight , width = \textwidth]{data-never-sleeps}
 \end{center}
 
 ## Why Business Analytics?
+\textbf{Industries and governments need to make:}
 \begin{itemize}
-\item Informed decisions based on facts
-\item Facts are measured via data
-\item Informed business decisions based on data
-\item Business Analytics! 
+\item[\faPaperPlaneO] Informed decisions based on facts 	\faAreaChart
+\item[\faPaperPlaneO] Facts are measured via data \faDownload
+\item[\faPaperPlaneO] Business analytics experts use statistical and computational methods to answer relevant questions using data \faCogs
+\item[\faPaperPlaneO] Business analytic profesionals communicate findings to experts and broad audiences \faComments
 \end{itemize}
+
 
 ## Master of Business Analytics --> Starting 2020
 \begin{columns}
@@ -55,11 +57,11 @@ library(maps)
 
 \begin{block}{}
 \begin{itemize}
-\item Statistical modelling 
-\item Computational methods
-\item R
-\item End-to-end analytics
-\item Communicating with data
+\item[\faArrowRight] Statistical modelling 
+\item[\faArrowRight] Computational methods
+\item[\faArrowRight] R
+\item[\faArrowRight] End-to-end analytics
+\item[\faArrowRight] Communicating with data
 
 \end{itemize}
 \end{block}
@@ -75,38 +77,15 @@ library(maps)
 \begin{center}
 Know what you are doing!
 \end{center}
-##  Testing
 
-\forestset{
-  L1/.style={},
-  L2/.style={edge={Orange,line width=2pt}},
-  L3/.style={edge={Orange,line width=2pt}},
-  L4/.style={edge={Orange,line width=2pt}},
-  L5/.style={edge={Orange,line width=2pt}},
-}
+<!-- ## Business analytics professional? -->
 
-\begin{forest}
-for tree={l sep+=.2cm,s sep+=.15cm,shape=rectangle, rounded corners,
-    draw, align=center,
-     top color=MonashBlue,  bottom color=MonashBlue}
-[\color{white}{Business Analytics}, L1 
-  [\color{white}{Informed Decisions based on facts}, L2
-    [\color{white}{Facts are measured via data}, L3 
-       [\color{white}{Informed decisions need data}, L4]
-       [\color{white}{Communicating}, L5]     
-    ]
-  ]  
-]    
-\end{forest}
-
-## Business analytics professional?
-
-\begin{itemize}
-\item  Using statistical and computational skills to answer business questions
-\item  Visualizing data 
-\item  Quantiative odelling (for big and small data \& for simple and complex data) 
-\item  Being able to comunicate findings to experts and broad audiences 
-\end{itemize}
+<!-- \begin{itemize} -->
+<!-- \item  Using statistical and computational skills to answer business questions -->
+<!-- \item  Visualizing data  -->
+<!-- \item  Quantiative modelling  -->
+<!-- \item  Comunicating findings to experts and broad audiences  -->
+<!-- \end{itemize} -->
 
 
 
@@ -120,10 +99,10 @@ data = data.frame(word = c("Data", "Statistics", "Decision making",
                   col = seq(1:9))
 
 set.seed(12)
-ggplot(data, aes(label = word, size = weight, color = col)) +
+fig1 = ggplot(data, aes(label = word, size = weight, color = col)) +
   geom_text_wordcloud_area() +
   scale_size_area(max_size = 100) +
-  theme_minimal()
+  theme_minimal() 
 
 ggsave("figs/word.pdf")
 ```
@@ -157,30 +136,32 @@ ggsave("figs/word.pdf")
 
 
 
-## Decisions and Data
-
-\begin{columns}
-\begin{column}{0.5\textwidth} 
-\begin{center}
-   \includegraphics[height = 4.5cm]{data}
-\end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
-
-\begin{itemize}
-\item increasing availability of data in our society
-\item Data is used to make decisions
-\item Industry, Government, inter-government and NGO
-\item Tools for data driven decision making
-\end{itemize}
-\end{column}
-\end{columns}
+## Decisions and Data 
 
 
-```{r}
-ggplot(map_data("world"), aes(long, lat, group=group, fill=region)) + 
+
+\begin{tcolorbox}
+\faCheck Increasing availability of data in our society
+\end{tcolorbox}
+\begin{tcolorbox}
+\faCheck Data is crucial to make decisions 
+\end{tcolorbox}
+\begin{tcolorbox}
+\faCheck Industries and governments make informed decisions based on data
+\end{tcolorbox}
+\begin{tcolorbox}
+\faCheck Business analytics professionals will play a mayor role in decision making 
+\end{tcolorbox}
+
+
+
+
+
+```{r , figure = FALSE}
+fig2 = ggplot(map_data("world"), aes(long, lat, group=group, fill=region)) + 
   geom_polygon(show.legend = F) +
-  ggtitle("Looking for business analytics profesionals")
+  theme_bw() +
+  ggtitle("Countries looking for business analytics profesionals")
 
 ggsave("figs/worldmap.pdf")
 ```
@@ -210,17 +191,17 @@ Companies and governments are creating stratagies for:
 ## Master of Business Analytics
 
 \begin{itemize}
-\item At least one unit of undergraduate statistics.
-\item An interest in using data to solve problems and
+\item[\faChevronRight] At least \textbf{one unit of undergraduate statistics}.
+\item[\faChevronRight] An \textbf{interest} in using \textbf{data} to solve problems and
 uncover truths.
-\item A combination of mathematics and computing
-skills with curiosity about the world.
-\item Most likely an undergraduate degree in a
-quantitative discipline: engineering, computer
-science, mathematics, statistics.
+\item[\faChevronRight] A combination of \textbf{mathematics and computing
+skills} with \textbf{curiosity} about the world.
+\item[\faChevronRight] Most \textbf{likely} an \textbf{undergraduate degree} in a
+quantitative discipline: \textbf{engineering, computer
+science, mathematics, statistics}.
 \end{itemize}
 
-## Units --> Advanced Preparatory Studies
+## Units --> \faUniversity Advanced Preparatory Studies
 
 \begin{block}{Advanced preparatory studies (24 points)}
 \begin{itemize}
@@ -231,7 +212,7 @@ science, mathematics, statistics.
 \end{itemize}
 \end{block}
 
-## Units --> Mastery Knowledge
+## Units --> \faUniversity Mastery Knowledge
 
 \begin{block}{Mastery knowledge (48 points)}
 \begin{itemize}
@@ -246,7 +227,7 @@ science, mathematics, statistics.
 \end{itemize}
 \end{block}
 
-## Units --> Application Studies
+## Units --> \faUniversity Application Studies
 
 \begin{block}{Application studies (24 points)}
 \begin{itemize}
@@ -262,11 +243,11 @@ science, mathematics, statistics.
 \end{itemize}
 \end{block}
 
-## MBAT: A World full of opportunities
+## MBAT: A World full of opportunities \faGraduationCap
 
 
 \begin{center}
-\textbf{All here at Monash!}
+\textbf{All here \faAt Monash!}
 
    \includegraphics[height = 8.5cm, width = 6cm]{earth_NASA}
    
