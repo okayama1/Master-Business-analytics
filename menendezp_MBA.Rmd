@@ -183,29 +183,38 @@ ggsave("figs/worldmap.pdf")
   * Fiercely independent, not sponsored by any software company.
   * We only use open-source software for maximum flexibility and accessibility
 
-## &nbsp;
-
-\placefig{2}{3}{}{RStudio-Ball.png}
-
-\begin{textblock}{6.5}(5.5,.5)\fontsize{13}{14}\sf
+## Monash MBAT is
+\begin{tcolorbox}
+\textbf{The only masters course in the world based entirely around R and taught by leading R developers.}
+\end{tcolorbox}
+\fontsize{10.5}{13}\sf
+<!-- \includegraphics[]{RStudio-Ball.png} -->
+\begin{columns}
+\begin{column}{0.5\textwidth} 
+\begin{itemize}\tightlist
+\item The \textbf{leading statistical programming} framework.
+\item Completely free and \textbf{open-source}
+\item Used by \textbf{every major company in the world}
+\item Supported by \textbf{Microsoft, Google, Facebook, Amazon}, etc
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth} 
 \begin{block}{}
 \begin{itemize}\tightlist
-\item The leading statistical programming framework.
-\item Completely free and open-source
-\item Used by every major company in the world
-\item Supported by Microsoft, Google, Facebook, Amazon, etc
 \item Rob Hyndman wrote the main forecasting tools
 \item Di Cook is a member of the R foundation
 \item The leading R developers visit Monash regularly.
 \end{itemize}
 \end{block}
+\end{column}
+\end{columns} 
+
+\begin{textblock}{2.3}(10.5,0)\fontsize{13}{14}\sf
+\includegraphics[width = 2.5cm, height = 2cm]{RStudio-Ball.png}
 \end{textblock}
 
-\begin{textblock}{4.3}(.5,4.7)
-\begin{alertblock}{}
-Monash MBAT is the only masters course in the world based entirely around R and taught by leading R developers.
-\end{alertblock}
-\end{textblock}
+
+
 
 
 
