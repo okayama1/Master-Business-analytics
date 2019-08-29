@@ -38,8 +38,12 @@ library(maps)
 ## Data is everywhere
 
 \begin{center}
-   \includegraphics[height =\textheight , width = \textwidth]{data-never-sleeps}
+   \includegraphics[height =7cm , width = \textwidth]{data-never-sleeps}
 \end{center}
+
+\begin{textblock}{10}(0.4,9)
+\fontsize{9}{10}\sf\texttt{https://www.domo.com/learn/data-never-sleeps-7}
+\end{textblock}
 
 ## Why Business Analytics?
 \textbf{Industries and governments need to make:}
@@ -110,49 +114,51 @@ ggsave("figs/word.pdf")
 ## Top jobs under the "4th Industrial revolution"
 
 \begin{columns}
-\begin{column}{0.5\textwidth} 
-   \begin{block}{}
+\begin{column}{0.5\textwidth}
+   \includegraphics[width = 6cm, height = 7cm]{word}
+\end{column}
+\begin{column}{0.5\textwidth}
+ \begin{block}{}
 \begin{enumerate}
-\item Data Scientists (19\%)
-\item Statistician (33\%)
+\item Data Scientists 19\% \faLongArrowUp
+\item Statistician 33\% \faLongArrowUp
 \item University Professor
 \end{enumerate}
 \end{block}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{center}
-   \includegraphics[width = 6cm, height = 7cm]{word}
-\end{center}
    
 \end{column}
 \end{columns}
 
 \textbf{Data is driving the 4th Industrial Revolution}
+\begin{textblock}{10}(1, 9)
+\fontsize{9}{10}\sf\texttt{https://www.careercast.com/jobs-rated/best-jobs-of-2019}
+\end{textblock}
 <!-- \begin{verbatim} -->
 <!-- https://www.careercast.com/jobs-rated/best-jobs-of-2019 -->
 <!-- \end{verbatim} -->
 
 
-
-
-
 ## Decisions and Data 
 
+\begin{columns}
+\begin{column}{0.5\textwidth} 
+\begin{itemize}
+\item[\faArrowUp] Increasing availability of data 
+\item[\faArrowRight] Data is crucial to make decisions 
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
 
+\includegraphics[width = 4cm, height = 3.8cm]{worldmap}
+\end{column}
+\end{columns}
 
-\begin{tcolorbox}
-\faCheck Increasing availability of data in our society
-\end{tcolorbox}
-\begin{tcolorbox}
-\faCheck Data is crucial to make decisions 
-\end{tcolorbox}
 \begin{tcolorbox}
 \faCheck Industries and governments make informed decisions based on data
 \end{tcolorbox}
 \begin{tcolorbox}
 \faCheck Business analytics professionals will play a mayor role in decision making 
 \end{tcolorbox}
-
 
 
 
@@ -167,25 +173,40 @@ ggsave("figs/worldmap.pdf")
 ```
 
 
+## What’s special about MBAT at Monash?
+\fontsize{14}{16}\sf
 
-## Worldwide 
-Companies and governments are creating stratagies for:
+  * Taught by internationally renowned researchers. We have authored many of the tools that are now taught around the world.
+  * Close connections with discipline leaders and primary developers across the globe.
+  * Cutting edge, focusing on problem solving and hands-on experience.
+  * Focus on wild data, real problems.
+  * Fiercely independent, not sponsored by any software company.
+  * We only use open-source software for maximum flexibility and accessibility
 
-\begin{columns}
-\begin{column}{0.5\textwidth} 
-\begin{center}
-   \includegraphics[height = 8.5cm, width = 6cm]{worldmap}
-\end{center}
-\end{column}
-\begin{column}{0.5\textwidth}
+## &nbsp;
 
-\begin{itemize}
-\item Data Collection $\rightarrow$ experimental designs
-\item Cleaning and merging data 
-\item Analyzing data
+\placefig{2}{3}{}{RStudio-Ball.png}
+
+\begin{textblock}{6.5}(5.5,.5)\fontsize{13}{14}\sf
+\begin{block}{}
+\begin{itemize}\tightlist
+\item The leading statistical programming framework.
+\item Completely free and open-source
+\item Used by every major company in the world
+\item Supported by Microsoft, Google, Facebook, Amazon, etc
+\item Rob Hyndman wrote the main forecasting tools
+\item Di Cook is a member of the R foundation
+\item The leading R developers visit Monash regularly.
 \end{itemize}
-\end{column}
-\end{columns}
+\end{block}
+\end{textblock}
+
+\begin{textblock}{4.3}(.5,4.7)
+\begin{alertblock}{}
+Monash MBAT is the only masters course in the world based entirely around R and taught by leading R developers.
+\end{alertblock}
+\end{textblock}
+
 
 
 ## Master of Business Analytics
@@ -246,13 +267,36 @@ science, mathematics, statistics}.
 ## MBAT: A World full of opportunities \faGraduationCap
 
 
+\fontsize{10.5}{13}\sf
+\begin{tcolorbox}
+\begin{itemize}
+\item[\faAngleRight] Highly connected instructors in analytics community
+\item[\faAngleRight] Instructors are active researchers
+\item[\faAngleRight] Learning cutting edge, using latest tools and best established methodology
+\end{itemize}
+\end{tcolorbox}
+\begin{columns}
+\begin{column}{0.5\textwidth} 
+\begin{itemize}
+\item  Learn end-to-end analytics including data collection, modeing, collaboration, communication.
+\item  Broad foundation: statistical thinking, probabilistic modeling, computational techniques
+\item  Social conscience, working for a better world
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
 \begin{center}
 \textbf{All here \faAt Monash!}
-
-   \includegraphics[height = 8.5cm, width = 6cm]{earth_NASA}
-   
+   \includegraphics[height = 4cm, width = 5.5cm]{earth_NASA}
    \textbf{Jump in!}
 \end{center}
+
+\end{column}
+\end{columns}
+
+ 
+
+
+
 
 
 
