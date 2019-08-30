@@ -231,7 +231,7 @@ quantitative discipline: \textbf{engineering, computer
 science, mathematics, statistics}.
 \end{itemize}
 
-## Units --> \faUniversity Advanced Preparatory Studies
+## Units --> \faUniversity \hphantom{} Advanced Preparatory Studies
 
 \begin{block}{Advanced preparatory studies (24 points)}
 \begin{itemize}
@@ -242,7 +242,7 @@ science, mathematics, statistics}.
 \end{itemize}
 \end{block}
 
-## Units --> \faUniversity Mastery Knowledge
+## Units --> \faUniversity \hphantom{} Mastery Knowledge
 
 \begin{block}{Mastery knowledge (48 points)}
 \begin{itemize}
@@ -257,7 +257,7 @@ science, mathematics, statistics}.
 \end{itemize}
 \end{block}
 
-## Units --> \faUniversity Application Studies
+## Units --> \faUniversity \hphantom{} Application Studies
 
 \begin{block}{Application studies (24 points)}
 \begin{itemize}
@@ -295,7 +295,7 @@ science, mathematics, statistics}.
 \begin{column}{0.5\textwidth}
 \begin{center}
 \textbf{All here \faAt Monash!}
-   \includegraphics[height = 4cm, width = 5.5cm]{earth_NASA}
+   \includegraphics[height = 4cm, width = 5.5cm]{ana-bg-2-rect}
    \textbf{Jump in!}
 \end{center}
 
@@ -303,8 +303,22 @@ science, mathematics, statistics}.
 \end{columns}
 
  
+##
 
+{\placefig{-0.01}{-0.01}{width=1.01\paperwidth,height=\paperheight}{ana-bg-2-rect}
+\begin{textblock}{7.5}(3.5,0.5)\fontsize{24}{30}\sf
+{\color{white}\raggedright\usebeamerfont{title}\par{Many thanks!}}
+\end{textblock}
+\begin{textblock}{3.5}(1.5,3)
+\color{white}\raggedright\usebeamerfont{title}{Questions?}\\[0.2cm]
+\end{textblock}
+}
 
+\begin{textblock}{12}(0.7,7.5)
+\color{black}\fontsize{11}{11}\sf\texttt{https://www.monash.edu/business/master-of-business-analytics}
+\end{textblock}
+
+ 
 
 
 
