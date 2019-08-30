@@ -38,7 +38,7 @@ library(maps)
 ## Data is everywhere
 
 \begin{center}
-   \includegraphics[height =7cm , width = \textwidth]{data-never-sleeps}
+\includegraphics[height =7cm , width = \textwidth]{data-never-sleeps}
 \end{center}
 
 \begin{textblock}{10}(0.4,9)
@@ -82,16 +82,6 @@ library(maps)
 Know what you are doing!
 \end{center}
 
-<!-- ## Business analytics professional? -->
-
-<!-- \begin{itemize} -->
-<!-- \item  Using statistical and computational skills to answer business questions -->
-<!-- \item  Visualizing data  -->
-<!-- \item  Quantiative modelling  -->
-<!-- \item  Comunicating findings to experts and broad audiences  -->
-<!-- \end{itemize} -->
-
-
 
 ```{r , fig.width= 10, fig.height=10}
 
@@ -133,9 +123,6 @@ ggsave("figs/word.pdf")
 \begin{textblock}{10}(1, 9)
 \fontsize{9}{10}\sf\texttt{https://www.careercast.com/jobs-rated/best-jobs-of-2019}
 \end{textblock}
-<!-- \begin{verbatim} -->
-<!-- https://www.careercast.com/jobs-rated/best-jobs-of-2019 -->
-<!-- \end{verbatim} -->
 
 
 ## Decisions and Data 
@@ -212,10 +199,6 @@ ggsave("figs/worldmap.pdf")
 \begin{textblock}{2.3}(10.5,0)\fontsize{13}{14}\sf
 \includegraphics[width = 2.5cm, height = 2cm]{RStudio-Ball.png}
 \end{textblock}
-
-
-
-
 
 
 ## Master of Business Analytics
