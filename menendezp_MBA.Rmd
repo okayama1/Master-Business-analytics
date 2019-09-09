@@ -57,7 +57,7 @@ anim_save(filename ="figs/animation.png")
 
 ```
 
-## Data is everywhere
+## Data is collected everywhere and at any time
 
 \begin{columns}
  \begin{column}{0.5\textwidth} 
