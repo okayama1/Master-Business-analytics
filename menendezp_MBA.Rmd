@@ -202,7 +202,7 @@ ggsave("figs/worldmap.pdf")
   \item  Cutting edge, focusing on problem solving and hands-on experience.\pause
   \item  Focus on wild data, real problems.\pause
   \item  Fiercely independent, not sponsored by any software company.\pause
-  \item  We only use open-source software for maximum flexibility and accessibility
+  \item  We only use open-source software for maximum flexibility and accessibility.
  \end{itemize}  
 
 ## Monash MBAT is
@@ -225,8 +225,8 @@ ggsave("figs/worldmap.pdf")
  \begin{column}{0.5\textwidth} 
   \begin{block}{}
    \begin{itemize}\tightlist
-    \item Rob Hyndman wrote the main forecasting tools
-    \item Di Cook is a member of the R foundation
+    \item Rob Hyndman wrote the main forecasting tools.
+    \item Di Cook is a member of the R foundation.
     \item The leading R developers visit Monash regularly.
    \end{itemize}
   \end{block}
