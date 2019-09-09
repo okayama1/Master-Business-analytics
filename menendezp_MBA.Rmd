@@ -334,7 +334,7 @@ ggsave("figs/worldmap.pdf")
 
 \begin{textblock}{12}(0.7,7.5)
  \color{black}\fontsize{11}{11}\sf\texttt{https://www.monash.edu/business/master-of-business-analytics}
- <!-- \color{blue1}{p.menendez@aims.gov.au} -->
+ 
 \end{textblock}
 
  
