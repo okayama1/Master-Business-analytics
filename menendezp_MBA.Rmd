@@ -31,64 +31,98 @@ library(lubridate)
 library(tsibble)
 library(ggwordcloud)
 library(maps)
+library(gapminder)
+
+library(gganimate)
 
 ```
 
 
+```{r , cache = TRUE, eval = FALSE}
+
+anim <- ggplot(gapminder, aes(x = gdpPercap, y=lifeExp, size = 3*pop, colour = country)) +
+  geom_point(show.legend = FALSE, alpha = 0.7) +
+  scale_color_viridis_d(option ="magma") +
+  scale_size(range = c(2, 12)) +
+  scale_x_log10() +
+  labs(x = "", y = "") +
+  theme_void() +
+  transition_time(year) +
+  shadow_wake(wake_length = 0.15, alpha = FALSE)
+anim
+
+
+anim_save(filename ="figs/animation.png")
+
+
+```
+
 ## Data is everywhere
 
-\begin{center}
-\includegraphics[height =7cm , width = \textwidth]{data-never-sleeps}
-\end{center}
+\begin{columns}
+ \begin{column}{0.5\textwidth} 
+  \animategraphics[autoplay,loop,height=\textheight]{5}{./figs/animation}{1}{100}
+ \end{column}
+ \begin{column}{0.5\textwidth}
+  \includegraphics[height =6.5cm , width = \textwidth]{data-never-sleeps}
+ \end{column}
+\end{columns}
 
 \begin{textblock}{10}(0.4,9)
-\fontsize{9}{10}\sf\texttt{https://www.domo.com/learn/data-never-sleeps-7}
+ \fontsize{9}{10}\sf\texttt{https://www.domo.com/learn/data-never-sleeps-7}
 \end{textblock}
+
 
 ## Why Business Analytics?
 \textbf{Industries and governments need to make:}
 \begin{itemize}
-\item[\faPaperPlaneO] Informed decisions based on facts 	\faAreaChart
-\item[\faPaperPlaneO] Facts are measured via data \faDownload
-\item[\faPaperPlaneO] Business analytics experts use statistical and computational methods to answer relevant questions using data \faCogs
-\item[\faPaperPlaneO] Business analytic profesionals communicate findings to experts and broad audiences \faComments
+ \item[\faPaperPlaneO] Informed decisions based on facts 	\faAreaChart
+ \item[\faPaperPlaneO] Facts are measured with data \faDownload
+ \item[\faPaperPlaneO] Business analytics experts use statistical and computational
+methods to answer business relevant questions using data \faCogs
+ \item[\faPaperPlaneO] Business analytic professionals are able to communicate findings
+to experts and broad audiences \faComments
 \end{itemize}
 
 
 ## Master of Business Analytics --> Starting 2020
 \begin{columns}
-\begin{column}{0.5\textwidth} 
-
-\begin{block}{}
-\begin{itemize}
-\item[\faArrowRight] Statistical modelling 
-\item[\faArrowRight] Computational methods
-\item[\faArrowRight] R
-\item[\faArrowRight] End-to-end analytics
-\item[\faArrowRight] Communicating with data
-
-\end{itemize}
-\end{block}
-
-\end{column}
-\begin{column}{0.5\textwidth}
-\textbf{EBS, Monash University}
-\begin{center}
+ \begin{column}{0.5\textwidth} 
+ \textbf{EBS, Monash University}
+   \begin{block}{}
+    \begin{itemize}
+     \item[\faArrowRight] Statistical modelling 
+     \item[\faArrowRight] Computational methods
+     \item[\faArrowRight] R
+     \item[\faArrowRight] End-to-end analytics
+     \item[\faArrowRight] Communicating with data
+    \end{itemize}
+   \end{block}
+ \end{column}
+ \begin{column}{0.5\textwidth}
+  \begin{center}
    \includegraphics[height = 5.5cm, width = 6cm]{hexAustralia}
-\end{center}
-\end{column}
+  \end{center}
+ \end{column}
 \end{columns}
+ 
 \begin{center}
-Know what you are doing!
+ Know what you are doing!
 \end{center}
 
 
 ```{r , fig.width= 10, fig.height=10}
 
 set.seed(43)
-data = data.frame(word = c("Data", "Statistics", "Decision making",
-                           "R", "Computational statistics", "Modelling",
-                           "Visualization", "Comunicating with data", "Business analytics"),
+data = data.frame(word = c("Data",
+                           "Statistics",
+                           "Decision making",
+                           "R",
+                           "Computational statistics",
+                           "Modelling",
+                           "Visualization",
+                           "Comunicating with data",
+                           "Business analytics"),
                   weight = c(runif(8, min = 100, max = 800), 900),
                   col = seq(1:9))
 
@@ -104,47 +138,46 @@ ggsave("figs/word.pdf")
 ## Top jobs under the "4th Industrial revolution"
 
 \begin{columns}
-\begin{column}{0.5\textwidth}
-   \includegraphics[width = 6cm, height = 7cm]{word}
-\end{column}
-\begin{column}{0.5\textwidth}
- \begin{block}{}
-\begin{enumerate}
-\item Data Scientists 19\% \faLongArrowUp
-\item Statistician 33\% \faLongArrowUp
-\item University Professor
-\end{enumerate}
-\end{block}
-   
-\end{column}
+ \begin{column}{0.5\textwidth}
+  \includegraphics[width = 6cm, height = 7cm]{word}
+ \end{column}
+ \begin{column}{0.5\textwidth}
+  \begin{block}{}
+   \begin{enumerate}
+    \item Data Scientists 19\% \faLongArrowUp
+    \item Statistician 33\% \faLongArrowUp
+    \item University Professor
+   \end{enumerate}
+  \end{block}
+ \end{column}
 \end{columns}
 
 \textbf{Data is driving the 4th Industrial Revolution}
 \begin{textblock}{10}(1, 9)
-\fontsize{9}{10}\sf\texttt{https://www.careercast.com/jobs-rated/best-jobs-of-2019}
+ \fontsize{9}{10}\sf\texttt{https://www.careercast.com/jobs-rated/best-jobs-of-2019}
 \end{textblock}
 
 
 ## Decisions and Data 
 
 \begin{columns}
-\begin{column}{0.5\textwidth} 
-\begin{itemize}
-\item[\faArrowUp] Increasing availability of data 
-\item[\faArrowRight] Data is crucial to make decisions 
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-
-\includegraphics[width = 4cm, height = 3.8cm]{worldmap}
-\end{column}
-\end{columns}
-
+ \begin{column}{0.5\textwidth} 
+  \begin{itemize}
+   \item[\faArrowUp] Increasing availability of data 
+   \item[\faArrowRight] Data is crucial to make decisions 
+  \end{itemize}
+ \end{column}
+ \begin{column}{0.5\textwidth}
+  \vspace{-0.3cm}
+  \includegraphics[width = 4cm, height = 3.2cm]{worldmap}
+  \end{column}
+ \end{columns}
+\pause
 \begin{tcolorbox}
-\faCheck Industries and governments make informed decisions based on data
+ \faCheck Industries and governments make informed decisions based on data
 \end{tcolorbox}
 \begin{tcolorbox}
-\faCheck Business analytics professionals will play a mayor role in decision making 
+ \faCheck Business analytics professionals will play a mayor role in decision making 
 \end{tcolorbox}
 
 
@@ -162,143 +195,146 @@ ggsave("figs/worldmap.pdf")
 
 ## What’s special about MBAT at Monash?
 \fontsize{14}{16}\sf
-
-  * Taught by internationally renowned researchers. We have authored many of the tools that are now taught around the world.
-  * Close connections with discipline leaders and primary developers across the globe.
-  * Cutting edge, focusing on problem solving and hands-on experience.
-  * Focus on wild data, real problems.
-  * Fiercely independent, not sponsored by any software company.
-  * We only use open-source software for maximum flexibility and accessibility
+ \begin{itemize}
+  \item  Taught by internationally renowned researchers. We have authored
+  many of the tools that are now taught around the world. \pause
+  \item Close connections with discipline leaders and primary developers across the globe. \pause
+  \item  Cutting edge, focusing on problem solving and hands-on experience.\pause
+  \item  Focus on wild data, real problems.\pause
+  \item  Fiercely independent, not sponsored by any software company.\pause
+  \item  We only use open-source software for maximum flexibility and accessibility
+ \end{itemize}  
 
 ## Monash MBAT is
 \begin{tcolorbox}
-\textbf{The only masters course in the world based entirely around R and taught by leading R developers.}
+ \textbf{The only masters course in the world based\\
+  entirely around R and taught by leading\\
+  R developers.}
 \end{tcolorbox}
 \fontsize{10.5}{13}\sf
 <!-- \includegraphics[]{RStudio-Ball.png} -->
-\begin{columns}
-\begin{column}{0.5\textwidth} 
-\begin{itemize}\tightlist
-\item The \textbf{leading statistical programming} framework.
-\item Completely free and \textbf{open-source}
-\item Used by \textbf{every major company in the world}
-\item Supported by \textbf{Microsoft, Google, Facebook, Amazon}, etc
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth} 
-\begin{block}{}
-\begin{itemize}\tightlist
-\item Rob Hyndman wrote the main forecasting tools
-\item Di Cook is a member of the R foundation
-\item The leading R developers visit Monash regularly.
-\end{itemize}
-\end{block}
-\end{column}
+ \begin{columns}
+  \begin{column}{0.5\textwidth} 
+   \begin{itemize}\tightlist
+    \item The \textbf{\color{blue1}{leading statistical programming}} framework.
+    \item Completely free and \textbf{\color{blue1}{open-source}}
+    \item Used by \textbf{\color{blue1}{every major company in the world}}
+    \item Supported by \textbf{\color{blue1}{Microsoft, Google, Facebook, Amazon}}, etc
+   \end{itemize}
+ \end{column}
+ \begin{column}{0.5\textwidth} 
+  \begin{block}{}
+   \begin{itemize}\tightlist
+    \item Rob Hyndman wrote the main forecasting tools
+    \item Di Cook is a member of the R foundation
+    \item The leading R developers visit Monash regularly.
+   \end{itemize}
+  \end{block}
+ \end{column}
 \end{columns} 
 
 \begin{textblock}{2.3}(10.5,0)\fontsize{13}{14}\sf
-\includegraphics[width = 2.5cm, height = 2cm]{RStudio-Ball.png}
+ \includegraphics[width = 2.5cm, height = 2cm]{RStudio-Ball.png}
 \end{textblock}
 
 
 ## Master of Business Analytics
 
 \begin{itemize}
-\item[\faChevronRight] At least \textbf{one unit of undergraduate statistics}.
-\item[\faChevronRight] An \textbf{interest} in using \textbf{data} to solve problems and
-uncover truths.
-\item[\faChevronRight] A combination of \textbf{mathematics and computing
-skills} with \textbf{curiosity} about the world.
-\item[\faChevronRight] Most \textbf{likely} an \textbf{undergraduate degree} in a
-quantitative discipline: \textbf{engineering, computer
-science, mathematics, statistics}.
+ \item[\faChevronRight] At least \textbf{\color{blue1}{one unit of undergraduate statistics}}.\pause
+ \item[\faChevronRight] An \textbf{\color{blue1}{interest}} in using \textbf{\color{blue1}{data}} 
+  to solve problems and uncover truths.\pause
+ \item[\faChevronRight] A combination of \textbf{\color{blue1}{mathematics and computing
+  skills}} with \textbf{\color{blue1}{curiosity}} about the world.\pause
+ \item[\faChevronRight] Most \textbf{\color{blue1}{likely}} an \textbf{\color{blue1}{undergraduate degree}} in a
+  quantitative discipline: \textbf{\color{blue1}{engineering, computer \pause
+  science, mathematics, statistics}}.
 \end{itemize}
 
 ## Units --> \faUniversity \hphantom{} Advanced Preparatory Studies
 
 \begin{block}{Advanced preparatory studies (24 points)}
-\begin{itemize}
-\item  ETC5510: Introduction to data analysis
-\item  ETC5242: Statistical thinking
-\item  ETC5250 Introduction to machine learning
-\item  ETC5550 Applied forecasting
-\end{itemize}
+ \begin{itemize}
+  \item  ETC5510: Introduction to data analysis
+  \item  ETC5242: Statistical thinking
+  \item  ETC5250 Introduction to machine learning
+  \item  ETC5550 Applied forecasting
+ \end{itemize}
 \end{block}
 
 ## Units --> \faUniversity \hphantom{} Mastery Knowledge
 
 \begin{block}{Mastery knowledge (48 points)}
-\begin{itemize}
-\item  ETC5512 Wild-caught data
-\item  ETC5513 Collaborative and reproducible practices
-\item  ETC5521 Exploratory data analysis
-\item  ETC5523 Data story-telling
-\item  ETF5500 High dimensional data analysis
-\item  ETC5555 Statistical machine learning
-\item ETC5580 Advanced statistical modelling
-\item  ETC5543 Business analytics creative activity (12) 9
-\end{itemize}
+ \begin{itemize}
+  \item  ETC5512 Wild-caught data
+  \item  ETC5513 Collaborative and reproducible practices
+  \item  ETC5521 Exploratory data analysis
+  \item  ETC5523 Data story-telling
+  \item  ETF5500 High dimensional data analysis
+  \item  ETC5555 Statistical machine learning
+  \item ETC5580 Advanced statistical modelling
+  \item  ETC5543 Business analytics creative activity (12)
+ \end{itemize}
 \end{block}
 
 ## Units --> \faUniversity \hphantom{} Application Studies
 
 \begin{block}{Application studies (24 points)}
-\begin{itemize}
-
-\item FIT9133 Programming foundations in Python
-\item FIT5205 Data in society
-\item FIT9132 Introduction to databases
-\item MAT9004 Mathematical foundations for data science
-\item ETC5410 Bayesian time series econometrics
-\item FIT5147 Data exploration and visualisation
-\item ETC5555 Statistical machine learning
-\item FIT5212 Data analysis for semi-structured data
-\end{itemize}
+ \begin{itemize}
+  \item FIT9133 Programming foundations in Python
+  \item FIT5205 Data in society
+  \item FIT9132 Introduction to databases
+  \item MAT9004 Mathematical foundations for data science
+  \item ETC5410 Bayesian time series econometrics
+  \item FIT5147 Data exploration and visualisation
+  \item ETC5555 Statistical machine learning
+  \item FIT5212 Data analysis for semi-structured data
+ \end{itemize}
 \end{block}
 
 ## MBAT: A World full of opportunities \faGraduationCap
 
 
 \fontsize{10.5}{13}\sf
-\begin{tcolorbox}
-\begin{itemize}
-\item[\faAngleRight] Highly connected instructors in analytics community
-\item[\faAngleRight] Instructors are active researchers
-\item[\faAngleRight] Learning cutting edge, using latest tools and best established methodology
-\end{itemize}
+ \begin{tcolorbox}
+  \begin{itemize}
+   \item[\faAngleRight] Highly connected instructors in analytics community
+   \item[\faAngleRight] Instructors are active researchers
+   \item[\faAngleRight] Learning cutting edge, using latest tools and best established methodology
+  \end{itemize}
 \end{tcolorbox}
 \begin{columns}
-\begin{column}{0.5\textwidth} 
-\begin{itemize}
-\item  Learn end-to-end analytics including data collection, modeing, collaboration, communication.
-\item  Broad foundation: statistical thinking, probabilistic modeling, computational techniques
-\item  Social conscience, working for a better world
-\end{itemize}
-\end{column}
+ \begin{column}{0.5\textwidth} 
+  \begin{itemize}
+   \item  Learn end-to-end analytics including data collection, modeling, collaboration, communication
+   \item  Broad foundation: statistical thinking, probabilistic modeling, computational techniques
+   \item  Social conscience, working for a better world
+  \end{itemize}
+ \end{column}
 \begin{column}{0.5\textwidth}
-\begin{center}
-\textbf{All here \faAt Monash!}
-   \includegraphics[height = 4cm, width = 5.5cm]{ana-bg-2-rect}
-   \textbf{Jump in!}
-\end{center}
-
-\end{column}
+ \begin{center}
+  \textbf{All here \faAt Monash!}
+  \includegraphics[height = 4cm, width = 5.5cm]{ana-bg-2-rect}
+  \textbf{Jump in!}
+  \end{center}
+ \end{column}
 \end{columns}
 
  
 ##
 
 {\placefig{-0.01}{-0.01}{width=1.01\paperwidth,height=\paperheight}{ana-bg-2-rect}
-\begin{textblock}{7.5}(3.5,0.5)\fontsize{24}{30}\sf
-{\color{white}\raggedright\usebeamerfont{title}\par{Many thanks!}}
-\end{textblock}
-\begin{textblock}{3.5}(1.5,3)
-\color{white}\raggedright\usebeamerfont{title}{Questions?}\\[0.2cm]
-\end{textblock}
+ \begin{textblock}{7.5}(3.5,0.5)\fontsize{24}{30}\sf
+  {\color{white}\raggedright\usebeamerfont{title}\par{Many thanks!}}
+ \end{textblock}
+ \begin{textblock}{3.5}(1.5,3)
+  \color{white}\raggedright\usebeamerfont{title}{Questions?}\\[0.2cm]
+ \end{textblock}
 }
 
 \begin{textblock}{12}(0.7,7.5)
-\color{black}\fontsize{11}{11}\sf\texttt{https://www.monash.edu/business/master-of-business-analytics}
+ \color{black}\fontsize{11}{11}\sf\texttt{https://www.monash.edu/business/master-of-business-analytics}
+ <!-- \color{blue1}{p.menendez@aims.gov.au} -->
 \end{textblock}
 
  
