@@ -77,7 +77,7 @@ anim_save(filename ="figs/animation.png")
 \textbf{Industries and governments need to make:}
 \begin{itemize}
  \item[\faPaperPlaneO] Informed decisions based on facts 	\faAreaChart
- \item[\faPaperPlaneO] Facts are measured with data \faDownload
+ \item[\faPaperPlaneO] Facts are measured with data \faDownload \pause
  \item[\faPaperPlaneO] Business analytics experts use statistical and computational
 methods to answer business relevant questions using data \faCogs
  \item[\faPaperPlaneO] Business analytic professionals are able to communicate findings
@@ -194,13 +194,13 @@ ggsave("figs/worldmap.pdf")
 
 
 ## What’s special about MBAT at Monash?
-\fontsize{14}{16}\sf
- \begin{itemize}
+\fontsize{12}{14}\sf
+ \begin{itemize}\tightlist
   \item  Taught by internationally renowned researchers. We have authored
   many of the tools that are now taught around the world. \pause
   \item Close connections with discipline leaders and primary developers across the globe. \pause
   \item  Cutting edge, focusing on problem solving and hands-on experience.\pause
-  \item  Focus on wild data, real problems.\pause
+  \item  Focus on wild data, real problems. We have experience working with industry and government.\pause
   \item  Fiercely independent, not sponsored by any software company.\pause
   \item  We only use open-source software for maximum flexibility and accessibility.
  \end{itemize}  
