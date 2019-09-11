@@ -88,26 +88,24 @@ to experts and broad audiences \faComments
 ## Master of Business Analytics --> Starting 2020
 \begin{columns}
  \begin{column}{0.5\textwidth} 
- \textbf{EBS, Monash University}
+ \fontsize{12}{14}
    \begin{block}{}
     \begin{itemize}
-     \item[\faArrowRight] Statistical modelling 
-     \item[\faArrowRight] Computational methods
-     \item[\faArrowRight] R
-     \item[\faArrowRight] End-to-end analytics
-     \item[\faArrowRight] Communicating with data
+     \item[\faArrowRight]  Learn end-to-end analytics including data collection, modeling, collaboration,    communication
+     \item[\faArrowRight]  Broad foundation: statistical thinking, probabilistic modeling, computational techniques
+     \item[\faArrowRight]  Social conscience, working for a better world
     \end{itemize}
    \end{block}
  \end{column}
- \begin{column}{0.5\textwidth}
+ \begin{column}{0.4\textwidth}
   \begin{center}
-   \includegraphics[height = 5.5cm, width = 6cm]{hexAustralia}
+   \includegraphics[height = 5.5cm, width = 5cm]{hexAustralia}
   \end{center}
  \end{column}
 \end{columns}
  
 \begin{center}
- Know what you are doing!
+ Know what you are doing! \textbf{EBS, Monash University}
 \end{center}
 
 
@@ -306,9 +304,10 @@ ggsave("figs/worldmap.pdf")
 \begin{columns}
  \begin{column}{0.5\textwidth} 
   \begin{itemize}
-   \item  Learn end-to-end analytics including data collection, modeling, collaboration, communication
-   \item  Broad foundation: statistical thinking, probabilistic modeling, computational techniques
-   \item  Social conscience, working for a better world
+   \item \textbf{\color{blue1}{Location and duration:}} 1.5 or 2 years full time 
+          or 3 or 4 years part time @ Monash Clayton
+   \item \textbf{\color{blue1}{Applications}} for our Semester 1 intake (February 2020) are now open.
+   \item \textbf{\color{blue1}{Entry requirements:}} Australian bachelor's degree or an equivalent qualification
   \end{itemize}
  \end{column}
 \begin{column}{0.5\textwidth}
