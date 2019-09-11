@@ -76,10 +76,10 @@ anim_save(filename ="figs/animation.png")
 ## Why Business Analytics?
 \textbf{Industries and governments need to make:}
 \begin{itemize}
- \item[\faPaperPlaneO] Informed decisions based on facts 	\faAreaChart
+ \item[\faPaperPlaneO] Informed decisions based on facts 	\faAreaChart \pause
  \item[\faPaperPlaneO] Facts are measured with data \faDownload \pause
  \item[\faPaperPlaneO] Business analytics experts use statistical and computational
-methods to answer business relevant questions using data \faCogs
+methods to answer business relevant questions using data \faCogs \pause
  \item[\faPaperPlaneO] Business analytic professionals are able to communicate findings
 to experts and broad audiences \faComments
 \end{itemize}
@@ -194,11 +194,11 @@ ggsave("figs/worldmap.pdf")
 ## What’s special about MBAT at Monash?
 \fontsize{12}{14}\sf
  \begin{itemize}\tightlist
-  \item  Taught by internationally renowned researchers. We have authored
-  many of the tools that are now taught around the world. \pause
+  \item  Taught by internationally renowned researchers. {\color{blue1}{We have authored
+  many of the tools that are now taught around the world.}} \pause
   \item Close connections with discipline leaders and primary developers across the globe. \pause
   \item  Cutting edge, focusing on problem solving and hands-on experience.\pause
-  \item  Focus on wild data, real problems. We have experience working with industry and government.\pause
+  \item  Focus on wild data, real problems. {\color{blue1}{We have experience working with industry and government.}}\pause
   \item  Fiercely independent, not sponsored by any software company.\pause
   \item  We only use open-source software for maximum flexibility and accessibility.
  \end{itemize}  
@@ -236,7 +236,7 @@ ggsave("figs/worldmap.pdf")
 \end{textblock}
 
 
-## Master of Business Analytics
+## MBAT users profile
 
 \begin{itemize}
  \item[\faChevronRight] At least \textbf{\color{blue1}{one unit of undergraduate statistics}}.\pause
