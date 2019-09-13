@@ -93,8 +93,10 @@ to experts and broad audiences \faComments
  \fontsize{12}{14}
    \begin{block}{}
     \begin{itemize}
-     \item[\faArrowRight]  Learn end-to-end analytics including data collection, modeling, collaboration,    communication
-     \item[\faArrowRight]  Broad foundation: statistical thinking, probabilistic modeling, computational techniques
+     \item[\faArrowRight]  Learn end-to-end analytics including data collection, 
+     modeling, collaboration,    communication
+     \item[\faArrowRight]  Broad foundation: statistical thinking, probabilistic
+     modeling, computational techniques
      \item[\faArrowRight]  Social conscience, working for a better world
     \end{itemize}
    \end{block}
@@ -146,7 +148,7 @@ ggsave("figs/word.pdf")
    \begin{enumerate}
     \item Data Scientists 19\% \faLongArrowUp
     \item Statistician 33\% \faLongArrowUp
-    <!-- \item[\faArrowRight] Median salary USD$114K -->
+    \item[\faArrowRight] Median salary USD114K
    \end{enumerate}
   \end{block}
  \end{column}
@@ -201,15 +203,15 @@ ggsave("figs/worldmap.pdf")
 
 
 ## What’s special about MBAT at Monash?
-\fontsize{12}{14}\sf
+<!-- \fontsize{12}{14}\sf -->
+\vspace{-0.3cm}
  \begin{itemize}\tightlist
   \item  Taught by internationally renowned researchers. {\color{blue1}{We have authored
   many of the tools that are now taught around the world.}} \pause
   \item Close connections with discipline leaders and primary developers across the globe. \pause
   \item  Cutting edge, focusing on problem solving and hands-on experience.\pause
-  \item  Focus on wild data, real problems. {\color{blue1}{We have experience working with industry and government.}}\pause
-  \item  Fiercely independent, not sponsored by any software company.\pause
-  \item  We only use open-source software for maximum flexibility and accessibility.
+  \item  Focus on wild data, real problems. {\color{blue1}{We have experience working with industry and     government.}}\pause
+  \item  Fiercely independent, not sponsored by any software company only use open-source software.
  \end{itemize}  
 
 ## Monash MBAT is
@@ -259,7 +261,7 @@ ggsave("figs/worldmap.pdf")
 
 ## Units --> \faUniversity \hphantom{} Advanced Preparatory Studies
 
-\begin{block}{Advanced preparatory studies (24 points)}
+\begin{block}{(A) Advanced preparatory studies (24 points)}
  \begin{itemize}
   \item  ETC5510: Introduction to data analysis
   \item  ETC5242: Statistical thinking
@@ -267,10 +269,13 @@ ggsave("figs/worldmap.pdf")
   \item  ETC5550 Applied forecasting
  \end{itemize}
 \end{block}
+\faArrowRight \hphantom{} Depending on prior qualifications --> credits might be received for (A)
+ 
+\faArrowRight \hphantom{} All students will complete (B) and (C)
 
 ## Units --> \faUniversity \hphantom{} Mastery Knowledge
 
-\begin{block}{Mastery knowledge (48 points)}
+\begin{block}{(B) Mastery knowledge (48 points)}
  \begin{itemize}
   \item  ETC5512 Wild-caught data
   \item  ETC5513 Collaborative and reproducible practices
@@ -285,7 +290,7 @@ ggsave("figs/worldmap.pdf")
 
 ## Units --> \faUniversity \hphantom{} Application Studies
 
-\begin{block}{Application studies (24 points)}
+\begin{block}{(C) Application studies (24 points)}
  \begin{itemize}
   \item FIT9133 Programming foundations in Python
   \item FIT5205 Data in society
