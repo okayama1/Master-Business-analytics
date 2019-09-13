@@ -39,16 +39,18 @@ library(gganimate)
 
 
 ```{r , cache = TRUE, eval = FALSE}
+#PM Modifications from
+#https://gist.github.com/thomasp85/05169ad44ddcc8ed56da6ff7bf7fbe36
 
 anim <- ggplot(gapminder, aes(x = gdpPercap, y=lifeExp, size = 3*pop, colour = country)) +
-  geom_point(show.legend = FALSE, alpha = 0.7) +
+  geom_point(show.legend = FALSE, alpha = 0.9) +
   scale_color_viridis_d(option ="magma") +
-  scale_size(range = c(2, 12)) +
+  scale_size(range = c(5, 20)) +
   scale_x_log10() +
   labs(x = "", y = "") +
   theme_void() +
   transition_time(year) +
-  shadow_wake(wake_length = 0.15, alpha = FALSE)
+  shadow_wake(wake_length = 0.15, size = 20,  alpha = FALSE)
 anim
 
 
