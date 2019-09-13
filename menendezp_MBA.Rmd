@@ -1,6 +1,6 @@
 ---
 title: "Master of Business analytics: MBAT"
-author: "Patricia Menéndez"
+author: "Dr Patricia Menéndez, Lecturer MBAT"
 date: 
 fontsize: 14pt
 output:
@@ -146,7 +146,7 @@ ggsave("figs/word.pdf")
    \begin{enumerate}
     \item Data Scientists 19\% \faLongArrowUp
     \item Statistician 33\% \faLongArrowUp
-    \item University Professor
+    <!-- \item[\faArrowRight] Median salary USD$114K -->
    \end{enumerate}
   \end{block}
  \end{column}
@@ -168,7 +168,7 @@ ggsave("figs/word.pdf")
   \end{itemize}
  \end{column}
  \begin{column}{0.5\textwidth}
-  \vspace{-0.3cm}
+  \vspace{-0.5cm}
   \includegraphics[width = 4cm, height = 3.2cm]{worldmap}
   \end{column}
  \end{columns}
@@ -176,7 +176,16 @@ ggsave("figs/word.pdf")
 \vspace{0.7cm}
 \begin{tcolorbox}
  \faCheck Business analytics professionals are/will play a mayor role in decision making 
+ \textbf{with Jobs @}
+ \begin{itemize}
+  \item Industry
+  \item Government
+  \item University
+  \end{itemize}
+ 
 \end{tcolorbox}
+
+ 
 
 
 
