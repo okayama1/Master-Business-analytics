@@ -156,13 +156,13 @@ ggsave("figs/word.pdf")
 \end{textblock}
 
 
-## Decisions and Data 
+## Countries looking for MBAT graduates 
 
 \begin{columns}
  \begin{column}{0.5\textwidth} 
   \begin{itemize}
-   \item[\faArrowUp] Increasing availability of data 
-   \item[\faArrowRight] Data is crucial to make decisions 
+   \item[\faArrowUp] \textbf{Increasing} demand for Business Analytics graduates 
+   \item[\faArrowRight] \textbf{Worldwide!}
   \end{itemize}
  \end{column}
  \begin{column}{0.5\textwidth}
@@ -171,11 +171,9 @@ ggsave("figs/word.pdf")
   \end{column}
  \end{columns}
 \pause
+\vspace{0.7cm}
 \begin{tcolorbox}
- \faCheck Industries and governments make informed decisions based on data
-\end{tcolorbox}
-\begin{tcolorbox}
- \faCheck Business analytics professionals will play a mayor role in decision making 
+ \faCheck Business analytics professionals are/will play a mayor role in decision making 
 \end{tcolorbox}
 
 
@@ -242,11 +240,10 @@ ggsave("figs/worldmap.pdf")
  \item[\faChevronRight] At least \textbf{\color{blue1}{one unit of undergraduate statistics}}.\pause
  \item[\faChevronRight] An \textbf{\color{blue1}{interest}} in using \textbf{\color{blue1}{data}} 
   to solve problems and uncover truths.\pause
- \item[\faChevronRight] A combination of \textbf{\color{blue1}{mathematics and computing
-  skills}} with \textbf{\color{blue1}{curiosity}} about the world.\pause
- \item[\faChevronRight] Most \textbf{\color{blue1}{likely}} an \textbf{\color{blue1}{undergraduate degree}} in a
-  quantitative discipline: \textbf{\color{blue1}{engineering, computer \pause
-  science, mathematics, statistics}}.
+ \item[\faChevronRight] A combination of \textbf{\color{blue1}{ curiosity in quantiative  and computational
+  methods}} with a \textbf{\color{blue1}{desire}} to make a difference.\pause
+ \item[\faChevronRight] An \textbf{\color{blue1}{undergraduate degree}} that has sparked your interest to work 
+ with data to answer real life questions.
 \end{itemize}
 
 ## Units --> \faUniversity \hphantom{} Advanced Preparatory Studies
