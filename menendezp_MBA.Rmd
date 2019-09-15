@@ -25,14 +25,12 @@ library(gridExtra)
 library(ggplot2)
 library(knitr)
 library(tidyverse)
-
-
+library(viridis)
 library(lubridate)
 library(tsibble)
 library(ggwordcloud)
 library(maps)
 library(gapminder)
-
 library(gganimate)
 
 ```
@@ -50,7 +48,7 @@ anim <- ggplot(gapminder, aes(x = gdpPercap, y=lifeExp, size = 3*pop, colour = c
   labs(x = "", y = "") +
   theme_void() +
   transition_time(year) +
-  shadow_wake(wake_length = 0.15, size = 20,  alpha = FALSE)
+  shadow_wake(wake_length = 0.15, size = 0.9,  alpha = FALSE)
 anim
 
 
@@ -132,7 +130,7 @@ set.seed(12)
 fig1 = ggplot(data, aes(label = word, size = weight, color = col)) +
   geom_text_wordcloud_area() +
   scale_size_area(max_size = 100) +
-  theme_minimal() 
+  theme_void() 
 
 ggsave("figs/word.pdf")
 ```
@@ -195,7 +193,7 @@ ggsave("figs/word.pdf")
 ```{r , figure = FALSE}
 fig2 = ggplot(map_data("world"), aes(long, lat, group=group, fill=region)) + 
   geom_polygon(show.legend = F) +
-  theme_bw() +
+  scale_fill_viridis_d() +
   ggtitle("Countries looking for business analytics profesionals")
 
 ggsave("figs/worldmap.pdf")
@@ -308,29 +306,32 @@ ggsave("figs/worldmap.pdf")
 
 \fontsize{10.5}{13}\sf
  \begin{tcolorbox}
+  
   \begin{itemize}
-   \item[\faAngleRight] Highly connected instructors in analytics community
-   \item[\faAngleRight] Instructors are active researchers
-   \item[\faAngleRight] Learning cutting edge, using latest tools and best established methodology
-  \end{itemize}
-\end{tcolorbox}
-\begin{columns}
- \begin{column}{0.5\textwidth} 
-  \begin{itemize}
-   \item \textbf{\color{blue1}{Location and duration:}} 1.5 or 2 years full time 
-          or 3 or 4 years part time @ Monash Clayton
+  \item \textbf{\color{blue1}{Location and duration:}} 1.5 or 2 years full time 
+          or 3 or 4 years part time @ Monash Clayton.
    \item \textbf{\color{blue1}{Applications}} for our Semester 1 intake (February 2020) are now open.
-   \item \textbf{\color{blue1}{Entry requirements:}} Australian bachelor's degree or an equivalent qualification
+   \item \textbf{\color{blue1}{Entry requirements:}} Australian bachelor's degree or an equivalent qualification.
+    An equivalent qualification, with a weighted average mark (WAM) of 65, or equivalent
+    GPA as determined by the School.
   \end{itemize}
- \end{column}
-\begin{column}{0.5\textwidth}
- \begin{center}
-  \textbf{All here \faAt Monash!}
-  \includegraphics[height = 4cm, width = 5.5cm]{ana-bg-2-rect}
-  \textbf{Jump in!}
-  \end{center}
- \end{column}
-\end{columns}
+ \end{tcolorbox}
+ \begin{columns}
+  \begin{column}{0.65\textwidth} 
+  \vspace{-0.2cm}
+   \begin{itemize}
+    \item[\faAngleRight] Highly connected instructors in analytics community
+    \item[\faAngleRight] Instructors $\rightarrow$ active researchers
+    \item[\faAngleRight] Learning cutting edge $\rightarrow$ latest tools \& best established methods
+   \end{itemize}
+  \end{column}
+  \begin{column}{0.45\textwidth}
+   \vspace{-0.2cm}
+   \begin{center}
+    \includegraphics[height = 4cm, width = 5.5cm]{ana-bg-2-rect}
+   \end{center}
+  \end{column}
+ \end{columns}
 
  
 ##
@@ -345,12 +346,13 @@ ggsave("figs/worldmap.pdf")
 }
 
 \begin{textblock}{12}(0.7,7.5)
- \color{black}\fontsize{11}{11}\sf\texttt{https://www.monash.edu/business/master-of-business-analytics}
+ \color{black}\textbf{All here \faAt Monash, jump in!}}
  
+ \color{black}\fontsize{11}{11}\sf\texttt{https://www.monash.edu/business/master-of-business-analytics}
+
 \end{textblock}
 
  
-
 
 
 
