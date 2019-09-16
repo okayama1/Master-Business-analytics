@@ -261,7 +261,7 @@ ggsave("figs/worldmap.pdf")
 
 ## Units --> \faUniversity \hphantom{} Advanced Preparatory Studies
 
-\begin{block}{(A) Advanced preparatory studies (24 points)}
+\begin{block}{(A) Advanced preparatory studies (24 credit points)}
  \begin{itemize}
   \item  ETC5510: Introduction to data analysis
   \item  ETC5242: Statistical thinking
@@ -275,7 +275,7 @@ ggsave("figs/worldmap.pdf")
 
 ## Units --> \faUniversity \hphantom{} Mastery Knowledge
 
-\begin{block}{(B) Mastery knowledge (48 points)}
+\begin{block}{(B) Mastery knowledge (48 credit points)}
  \begin{itemize}
   \item  ETC5512 Wild-caught data
   \item  ETC5513 Collaborative and reproducible practices
@@ -284,13 +284,14 @@ ggsave("figs/worldmap.pdf")
   \item  ETF5500 High dimensional data analysis
   \item  ETC5555 Statistical machine learning
   \item ETC5580 Advanced statistical modelling
-  \item  ETC5543 Business analytics creative activity (12)
+  \item  ETC5543 Business analytics creative activity (12 $\rightarrow$ Intership or research project)
  \end{itemize}
 \end{block}
 
 ## Units --> \faUniversity \hphantom{} Application Studies
 
-\begin{block}{(C) Application studies (24 points)}
+\begin{block}{(C) Application studies (24 credit points)}
+\textbf{Four elective units}
  \begin{itemize}
   \item FIT9133 Programming foundations in Python
   \item FIT5205 Data in society
@@ -312,7 +313,7 @@ ggsave("figs/worldmap.pdf")
   \begin{itemize}
   \item \textbf{\color{blue1}{Location and duration:}} 1.5 or 2 years full time 
           or 3 or 4 years part time @ Monash Clayton.
-   \item \textbf{\color{blue1}{Applications}} for our Semester 1 intake (February 2020) are now open.
+   \item \textbf{\color{blue1}{Applications}} for our Semester 1 intake (February 2020) are now open (including a candidate statement).
    \item \textbf{\color{blue1}{Entry requirements:}} Australian bachelor's degree or an equivalent qualification
     with a weighted average mark (WAM) of 65, or equivalent
     GPA as determined by the School.
