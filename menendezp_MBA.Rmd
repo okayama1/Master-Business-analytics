@@ -58,7 +58,9 @@ anim_save(filename ="figs/animation.png")
 ```
 
 ## Data is collected everywhere and at any time
-
+\fontsize{10}{11}
+The ability to make data-driven decisions is crucial to any business.
+\vspace{-1cm}
 \begin{columns}
  \begin{column}{0.5\textwidth} 
   \animategraphics[autoplay,loop,height=\textheight]{5}{./figs/animation}{1}{100}
@@ -69,7 +71,7 @@ anim_save(filename ="figs/animation.png")
 \end{columns}
 
 \begin{textblock}{10}(0.4,9)
- \fontsize{9}{10}\sf\texttt{https://www.domo.com/learn/data-never-sleeps-7}
+ \fontsize{7}{8}\sf\texttt{https://www.domo.com/learn/data-never-sleeps-7}
 \end{textblock}
 
 
@@ -92,9 +94,9 @@ to experts and broad audiences \faComments
    \begin{block}{}
     \begin{itemize}
      \item[\faArrowRight]  Learn end-to-end analytics including data collection, 
-     modeling, collaboration,    communication
+     modeling, collaboration \& communication
      \item[\faArrowRight]  Broad foundation: statistical thinking, probabilistic
-     modeling, computational techniques
+     modeling \& computational techniques
      \item[\faArrowRight]  Social conscience, working for a better world
     \end{itemize}
    \end{block}
@@ -208,8 +210,8 @@ ggsave("figs/worldmap.pdf")
   many of the tools that are now taught around the world.}} \pause
   \item Close connections with discipline leaders and primary developers across the globe. \pause
   \item  Cutting edge, focusing on problem solving and hands-on experience.\pause
-  \item  Focus on wild data, real problems. {\color{blue1}{We have experience working with industry and     government.}}\pause
-  \item  Fiercely independent, not sponsored by any software company only use open-source software.
+  \item  Focus on wild data and real problems. {\color{blue1}{We have experience working with industry and     government.}}\pause
+  \item  Fiercely independent $\rightarrow$ only use open-source software.
  \end{itemize}  
 
 ## Monash MBAT is
@@ -224,9 +226,9 @@ ggsave("figs/worldmap.pdf")
   \begin{column}{0.5\textwidth} 
    \begin{itemize}\tightlist
     \item The \textbf{\color{blue1}{leading statistical programming}} framework.
-    \item Completely free and \textbf{\color{blue1}{open-source}}
-    \item Used by \textbf{\color{blue1}{every major company in the world}}
-    \item Supported by \textbf{\color{blue1}{Microsoft, Google, Facebook, Amazon}}, etc
+    \item Completely free and \textbf{\color{blue1}{open-source.}}
+    \item Used by \textbf{\color{blue1}{every major company in the world.}}
+    \item Supported by \textbf{\color{blue1}{Microsoft, Google, Facebook, Amazon}}, etc.
    \end{itemize}
  \end{column}
  \begin{column}{0.5\textwidth} 
@@ -311,8 +313,8 @@ ggsave("figs/worldmap.pdf")
   \item \textbf{\color{blue1}{Location and duration:}} 1.5 or 2 years full time 
           or 3 or 4 years part time @ Monash Clayton.
    \item \textbf{\color{blue1}{Applications}} for our Semester 1 intake (February 2020) are now open.
-   \item \textbf{\color{blue1}{Entry requirements:}} Australian bachelor's degree or an equivalent qualification.
-    An equivalent qualification, with a weighted average mark (WAM) of 65, or equivalent
+   \item \textbf{\color{blue1}{Entry requirements:}} Australian bachelor's degree or an equivalent qualification
+    with a weighted average mark (WAM) of 65, or equivalent
     GPA as determined by the School.
   \end{itemize}
  \end{tcolorbox}
