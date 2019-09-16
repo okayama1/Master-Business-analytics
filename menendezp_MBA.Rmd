@@ -148,7 +148,7 @@ ggsave("figs/word.pdf")
    \begin{enumerate}
     \item Data Scientists 19\% \faLongArrowUp
     \item Statistician 33\% \faLongArrowUp
-    \item[\faArrowRight] Median salary USD114K
+    \item[\faArrowRight] Interesting jobs
    \end{enumerate}
   \end{block}
  \end{column}
