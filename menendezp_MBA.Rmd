@@ -1,5 +1,5 @@
 ---
-title: "Master of Business analytics: MBAT"
+title: "Master of Business Analytics: MBAT"
 author: "Dr Patricia Menéndez, Lecturer MBAT"
 date: 
 fontsize: 14pt
