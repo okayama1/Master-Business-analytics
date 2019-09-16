@@ -209,8 +209,8 @@ ggsave("figs/worldmap.pdf")
   \item  Taught by internationally renowned researchers. {\color{blue1}{We have authored
   many of the tools that are now taught around the world.}} \pause
   \item Close connections with discipline leaders and primary developers across the globe. \pause
-  \item  Cutting edge, focusing on problem solving and hands-on experience.\pause
-  \item  Focus on wild data and real problems. {\color{blue1}{We have experience working with industry and     government.}}\pause
+  \item  Cutting edge knowledge $\rightarrow$ focusing on problem solving and hands-on experience.\pause
+  \item  Centered on wild data and real problems. {\color{blue1}{We have experience working with industry and     government.}}\pause
   \item  Fiercely independent $\rightarrow$ only use open-source software.
  \end{itemize}  
 
