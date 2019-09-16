@@ -148,7 +148,7 @@ ggsave("figs/word.pdf")
    \begin{enumerate}
     \item Data Scientists 19\% \faLongArrowUp
     \item Statistician 33\% \faLongArrowUp
-    \item[\faArrowRight] Interesting jobs
+    \item[\faArrowRight] Very interesting jobs!
    \end{enumerate}
   \end{block}
  \end{column}
