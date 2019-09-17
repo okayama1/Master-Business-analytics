@@ -284,7 +284,8 @@ ggsave("figs/worldmap.pdf")
   \item  ETF5500 High dimensional data analysis
   \item  ETC5555 Statistical machine learning
   \item ETC5580 Advanced statistical modelling
-  \item  ETC5543 Business analytics creative activity (12 $\rightarrow$ Intership or research project)
+  \item  ETC5543 Business analytics creative activity\\
+  (12 $\rightarrow$ Intership or research project)
  \end{itemize}
 \end{block}
 
