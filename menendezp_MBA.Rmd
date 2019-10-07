@@ -115,7 +115,7 @@ to experts and broad audiences \faComments
 
 ```{r , fig.width= 10, fig.height=10}
 
-set.seed(43)
+set.seed(62)
 data = data.frame(word = c("Data",
                            "Statistics",
                            "Decision making",
@@ -125,14 +125,14 @@ data = data.frame(word = c("Data",
                            "Visualization",
                            "Comunicating with data",
                            "Business analytics"),
-                  weight = c(runif(8, min = 100, max = 800), 900),
+                  weight = c(runif(8, min = 600, max = 800), 900),
                   col = seq(1:9))
 
-set.seed(12)
+#set.seed(12)
 fig1 = ggplot(data, aes(label = word, size = weight, color = col)) +
   geom_text_wordcloud_area() +
-  scale_size_area(max_size = 100) +
-  theme_void() 
+  scale_size_area(max_size = 27) +
+  theme_minimal() 
 
 ggsave("figs/word.pdf")
 ```
@@ -280,7 +280,7 @@ ggsave("figs/worldmap.pdf")
   \item  ETC5512 Wild-caught data
   \item  ETC5513 Collaborative and reproducible practices
   \item  ETC5521 Exploratory data analysis
-  \item  ETC5523 Data story-telling
+  \item  ETC5523 Communicating with Data
   \item  ETF5500 High dimensional data analysis
   \item  ETC5555 Statistical machine learning
   \item ETC5580 Advanced statistical modelling
